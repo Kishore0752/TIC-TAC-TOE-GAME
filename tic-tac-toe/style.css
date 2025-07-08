@@ -1,0 +1,8 @@
+body { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background: linear-gradient(135deg, #ffe259 0%, #ffa751 100%); font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif; }
+h1 { color: #ff3e6c; margin-bottom: 20px; font-size: 3rem; letter-spacing: 2px; text-shadow: 2px 2px 0 #fff176, 4px 4px 0 #ffb300; }
+#board { display: grid; grid-template-columns: repeat(3, 90px); grid-template-rows: repeat(3, 90px); gap: 15px; margin-bottom: 10px; }
+.cell { width: 90px; height: 90px; background: #fff176; color: #ff3e6c; font-size: 3rem; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 25px; box-shadow: 0 4px 12px #ffb30099; transition: background 0.2s, transform 0.1s; border: 4px solid #ffb300; font-weight: bold; }
+.cell:hover { background: #ffd54f; transform: scale(1.08) rotate(-5deg); }
+#message { color: #43a047; margin: 25px 0 15px 0; font-size: 1.5rem; font-weight: bold; text-shadow: 1px 1px 0 #fff; min-height: 2em; }
+#reset { padding: 12px 28px; font-size: 1.2rem; border: none; border-radius: 20px; background: linear-gradient(90deg, #ff3e6c 0%, #ffb300 100%); color: #fff; cursor: pointer; font-family: inherit; font-weight: bold; box-shadow: 0 2px 8px #ffb30099; margin-top: 10px; transition: background 0.2s, transform 0.1s; }
+#reset:hover { background: linear-gradient(90deg, #ffb300 0%, #ff3e6c 100%); transform: scale(1.08) rotate(3deg); } 
